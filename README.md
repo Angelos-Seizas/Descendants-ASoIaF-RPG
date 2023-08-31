@@ -4,7 +4,7 @@
 
 [EN]: Descendants III (pre-alpha version) - Roleplaying game inspired by the epic fantasy book series *A Song of Ice and Fire*
 
-![Descendants Logo](logo.png)
+![Descendants Logo](logo.jpg)
 
 **English version below**
 
