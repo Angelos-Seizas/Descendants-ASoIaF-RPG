@@ -36,49 +36,6 @@ Import the font stylesheet.
   -webkit-transform-origin: 0% 50%;
   /* Chrome, Safari, Opera */
   transform-origin: 0% 50%; }
-
-/* Google Drive IDs for the background images of the elements */
-:root {
-    --background: "https://drive.google.com/uc?export=view&id=1Yg8JycJvEEqYeq3ghwZVx0t5UNdxn5kC";
-    --button_H22-active: "https://drive.google.com/uc?export=view&id=1h9Ic5C4doojsgBbKjqLU9Yx1orQ6d5jQ";
-    --button_H22-pressed: "https://drive.google.com/uc?export=view&id=1Yx33YgKWAiH9GhzOnpUTnN78IE-X22z_";
-    --button_H22: "https://drive.google.com/uc?export=view&id=1hw2AGhUbGyXvJ5MQpsMB_he-chB_okSt";
-    --checkbox-active-pressed: "https://drive.google.com/uc?export=view&id=1zhQs-ZOlASywOtlFGdYkNpvollNlTGFX";
-    --checkbox-active: "https://drive.google.com/uc?export=view&id=1P1ZuI8FlVRvJ4Z_l0KjfW6AeGJPuq0yy";
-    --checkbox-pressed: "https://drive.google.com/uc?export=view&id=1fjW_TAJXwAwAKARj184jeMCjFZTCeQpD";
-    --checkbox: "https://drive.google.com/uc?export=view&id=1HwTekBZ7dMXjhb5Hy6jiQUJ3OgaEVovp";
-    --large-button-active: "https://drive.google.com/uc?export=view&id=1xdwDnBMK0ZSXk4QFQkDuB0CN57leYcHR";
-    --large-button-pressed: "https://drive.google.com/uc?export=view&id=1Y12vOTP1PdeY89AE4KsBz_DKc-R5p6FM";
-    --large-button: "https://drive.google.com/uc?export=view&id=1mUVNJpGhXqkr3EwxdE2EbbKCNEoYBe_L";
-    --lite_opaque-border: "https://drive.google.com/uc?export=view&id=1OeT09KmiLoFCBwvs2xoKeQM-xq49n-mS";
-    --opaque-border: "https://drive.google.com/uc?export=view&id=1F5ATTz1w022MVhnPAW30OvT8r_aTaP3k";
-    --radiobox-active-pressed: "https://drive.google.com/uc?export=view&id=1BqnuVYQrWD6kSYIlOTHoLdNzsJvJo0KL";
-    --radiobox-active: "https://drive.google.com/uc?export=view&id=1FCT6bJJ9gaXr8N44VSSF3LqYsosWSZ6E";
-    --radiobox-pressed: "https://drive.google.com/uc?export=view&id=1GS6JDdbKmpd7VgD6DMRnXHi-r4XV3ZcE";
-    --radiobox: "https://drive.google.com/uc?export=view&id=1wK49awRllmZz-J2ybqiBEc7KHg8JXlwV";
-    --selection2: "https://drive.google.com/uc?export=view&id=10k-_65aNDeZrc8kR9vUkCZjYGj1ZlLG3";
-    --selection2-background: "https://drive.google.com/uc?export=view&id=1peaGHvBlAI748RYQJo6ieOQrb9ZqszLu";
-    --slider_arrow_gold-active: "https://drive.google.com/uc?export=view&id=1gIisDA6N1heawr90DJDXS5aD6GpQFPbZ";
-    --slider_arrow_gold-pressed: "https://drive.google.com/uc?export=view&id=113bHifjoVMOw1CKQDehEKS-D8Ddm1Jkk";
-    --slider_arrow_gold: "https://drive.google.com/uc?export=view&id=1akOTZpMh0pIZRH1gdsMGydXInGXQg5_H";
-    --slider-active: "https://drive.google.com/uc?export=view&id=1HqaXuJmUYsKdhk0eB9VRtPtafsf1ej3-";
-    --slider-pressed: "https://drive.google.com/uc?export=view&id=1DYi6DGzYd0ztuiAyvOyfPg-SSqXYNa1E";
-    --slider: "https://drive.google.com/uc?export=view&id=14ZCaF_B9XT35QZAn8YOZC4waYArocTtF";
-    --strong_opaque-border: "https://drive.google.com/uc?export=view&id=1o7kCexbrghTwkjgu_YJe6vpcCB1I0t6w";
-    --thick_opaque-border: "https://drive.google.com/uc?export=view&id=1QZqgW4lMtKAkxSvCfXQ_UOYAMIrIKWHS";
-    --thin_opaque-border: "https://drive.google.com/uc?export=view&id=1mvlvJ_7nmZk8Yy85UDYtoV1klqUYf5WI";
-    --lite_opaque-background: "https://drive.google.com/uc?export=view&id=1dtSj0Pf1Ci-DiFq3I9hh7nQWDRUbuIdr";
-    --opaque-background: "https://drive.google.com/uc?export=view&id=1xocbHRP7S2yPm-cNCZ_RyQgdMweixRdd";
-    --strong_opaque-background: "https://drive.google.com/uc?export=view&id=1yDJSZQC6vnWhyRcvkEAfBnVKLqlIk2zN";
-    --thick_opaque-background: "https://drive.google.com/uc?export=view&id=1ypTp4B3WJkf5RwmqzzBqZCnFqAlwcF0b";
-    --thin_opaque-background: "https://drive.google.com/uc?export=view&id=11bht0oWF4dYjxV2BQtDaU2_3CZVFh03s";
-    --ibeam: "https://drive.google.com/uc?export=view&id=1zzYIaxoXpZHzHtNzGqNhRcL41Tog3yDM";
-    --move_drag: "https://drive.google.com/uc?export=view&id=1UkadfuunWZCnODcIRoLuGuzoEQS8DWzc";
-    --normal: "https://drive.google.com/uc?export=view&id=1xdk4kiVMgjflKjlTi8YBu10u0-vUF9DT";
-    --select: "https://drive.google.com/uc?export=view&id=1pJ7ry2hkK7lTP7nHa-DtAPiqH03LqnsP";
-    --hr: "https://drive.google.com/uc?export=view&id=1N01fWzwA1Apico00O06xbEyE8VZukqTj";
-    --hr-golden: "https://drive.google.com/uc?export=view&id=17Qu0pSf8c5pynDpF3B64TkatLahvk3eq";
-    --scrollhorizontal: "https://drive.google.com/uc?export=view&id=13eO8q9hLAOXz9_eafbkVkUmXOvok-zrV"; }
  
 /**
 * BUTTON STYLING
@@ -92,7 +49,7 @@ Import the font stylesheet.
     overflow: hidden;
     outline: none;
     /* Background */
-    background: url("https://drive.google.com/uc?export=view&id=1hw2AGhUbGyXvJ5MQpsMB_he-chB_okSt") no-repeat no-repeat;
+    background: url("Assets/button_H22.png") no-repeat no-repeat;
     background-clip: padding-box;
     background-origin: padding-box;
     background-position: center;
@@ -111,12 +68,12 @@ Import the font stylesheet.
 /* Button hover */
 .desc-button.hover,
 .desc-button:hover {
-    background-image: url("https://drive.google.com/uc?export=view&id=1h9Ic5C4doojsgBbKjqLU9Yx1orQ6d5jQ"); }
+    background-image: url("Assets/button_H22-active.png"); }
 
 /* Button pressed */
 .desc-button.active,
 .desc-button:active {
-    background-image: url("https://drive.google.com/uc?export=view&id=1Yx33YgKWAiH9GhzOnpUTnN78IE-X22z_"); }
+    background-image: url("Assets/button_H22-pressed.png"); }
 
 /* Large button style */
 .desc-button {
@@ -127,7 +84,7 @@ Import the font stylesheet.
     overflow: hidden;
     outline: none;
     /* Background */
-    background: url("https://drive.google.com/uc?export=view&id=1mUVNJpGhXqkr3EwxdE2EbbKCNEoYBe_L") no-repeat no-repeat;
+    background: url("Assets/large-button.png") no-repeat no-repeat;
     background-clip: padding-box;
     background-origin: padding-box;
     background-position: center;
@@ -146,12 +103,12 @@ Import the font stylesheet.
 /* Button hover */
 .desc-button.hover,
 .desc-button:hover {
-    background-image: url("https://drive.google.com/uc?export=view&id=1xdwDnBMK0ZSXk4QFQkDuB0CN57leYcHR"); }
+    background-image: url("Assets/large-button-active.png"); }
 
 /* Button pressed */
 .desc-button.active,
 .desc-button:active {
-    background-image: url("https://drive.google.com/uc?export=view&id=1Y12vOTP1PdeY89AE4KsBz_DKc-R5p6FM"); }
+    background-image: url("Assets/large-button-pressed"); }
 
 
 /**
@@ -162,7 +119,7 @@ Import the font stylesheet.
     display: none;}
 
 .desc-content input[type=checkbox].desc-checkbox + label {
-    background: url("https://drive.google.com/uc?export=view&id=1HwTekBZ7dMXjhb5Hy6jiQUJ3OgaEVovp") no-repeat;
+    background: url("Assets/checkbox.png") no-repeat;
     line-height: 24px;
     display: inline-block;
     background-size: auto 100%;
@@ -172,7 +129,7 @@ Import the font stylesheet.
     margin-bottom: 10px; }
 
 .desc-content input[type=checkbox].desc-checkbox:checked + label {
-    background: url("https://drive.google.com/uc?export=view&id=1fjW_TAJXwAwAKARj184jeMCjFZTCeQpD") no-repeat;
+    background: url("Assets/checkbox-pressed.png") no-repeat;
     line-height: 24px;
     display: inline-block;
     background-size: auto 100%;
@@ -181,11 +138,11 @@ Import the font stylesheet.
 
 /* Hover styles */
 .desc-content input[type=checkbox].desc-checkbox + label:hover {
-    background: url("https://drive.google.com/uc?export=view&id=1P1ZuI8FlVRvJ4Z_l0KjfW6AeGJPuq0yy") no-repeat;
+    background: url("Assets/checkbox-active.png") no-repeat;
 }
 
 .desc-content input[type=checkbox].desc-checkbox:checked + label:hover {
-    background: url("https://drive.google.com/uc?export=view&id=1zhQs-ZOlASywOtlFGdYkNpvollNlTGFX") no-repeat;
+    background: url("Assets/checkbox-active-pressed.png") no-repeat;
 }
 
 /**
@@ -233,7 +190,7 @@ Import the font stylesheet.
 .thin-border {
   /* border */
   border-style: solid;
-  border-image-source: url("https://drive.google.com/uc?export=view&id=11bht0oWF4dYjxV2BQtDaU2_3CZVFh03s");
+  border-image-source: url("Assets/thin_opaque-border.png");
   border-image-repeat: repeat;
   border-image-slice: 10;
   border-image-width: 10px;
@@ -244,7 +201,7 @@ Import the font stylesheet.
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   /* background */
-  background: url("https://drive.google.com/uc?export=view&id=1ypTp4B3WJkf5RwmqzzBqZCnFqAlwcF0b") repeat repeat;
+  background: url("Assets/thin_opaque-background.png") repeat repeat;
   background-clip: padding-box;
   background-origin: padding-box;
   background-position: center; }
@@ -253,7 +210,7 @@ Import the font stylesheet.
 .strong-border {
     /* border */
   border-style: solid;
-  border-image-source: url("https://drive.google.com/uc?export=view&id=1o7kCexbrghTwkjgu_YJe6vpcCB1I0t6w");
+  border-image-source: url("Assets/strong_opaque-border.png");
   border-image-repeat: repeat;
   border-image-slice: 30;
   border-image-width: 30px;
@@ -264,7 +221,7 @@ Import the font stylesheet.
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   /* background */
-  background: url("https://drive.google.com/uc?export=view&id=1yDJSZQC6vnWhyRcvkEAfBnVKLqlIk2zN") repeat repeat;
+  background: url("Assets/strong_opaque-background.png") repeat repeat;
   background-clip: padding-box;
   background-origin: padding-box;
   background-position: center; }
@@ -273,7 +230,7 @@ Import the font stylesheet.
 .lite-border {
     /* border */
   border-style: solid;
-  border-image-source: url("https://drive.google.com/uc?export=view&id=1mvlvJ_7nmZk8Yy85UDYtoV1klqUYf5WI");
+  border-image-source: url("Assets/lite_opaque-border.png");
   border-image-repeat: repeat;
   border-image-slice: 8 8 8 8;
   border-image-width: 18px;
@@ -284,7 +241,7 @@ Import the font stylesheet.
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   /* background */
-  background: url("https://drive.google.com/uc?export=view&id=1dtSj0Pf1Ci-DiFq3I9hh7nQWDRUbuIdr") repeat repeat;
+  background: url("Assets/lite_opaque-background.png") repeat repeat;
   background-clip: padding-box;
   background-origin: padding-box;
   background-position: center; }
@@ -294,7 +251,7 @@ Import the font stylesheet.
   position: relative;
   /* border */
   border-style: solid;
-  border-image-source: url("https://drive.google.com/uc?export=view&id=1QZqgW4lMtKAkxSvCfXQ_UOYAMIrIKWHS");
+  border-image-source: url("thick_opaque-border.png");
   border-image-repeat: repeat;
   border-image-slice: 3 3 3 3;
   border-image-width: 7px;
@@ -305,7 +262,7 @@ Import the font stylesheet.
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   /* background */
-  background: url("https://drive.google.com/uc?export=view&id=1ypTp4B3WJkf5RwmqzzBqZCnFqAlwcF0b") repeat repeat;
+  background: url("thick_opaque-background.png") repeat repeat;
   background-clip: padding-box;
   background-origin: padding-box;
   background-position: center; }
@@ -317,21 +274,21 @@ Import the font stylesheet.
 /* This rule applies a custom cursor class when explicitly requested. */
 /* It defines the default cursor appearance, enhancing clarity and user experience. */
 .desc-cursor-default {
-  cursor: url("https://drive.google.com/uc?export=view&id=1xdk4kiVMgjflKjlTi8YBu10u0-vUF9DT"), auto !important; }
+  cursor: url("Assets/cursor/normal.png"), auto !important; }
 
 /* Default Cursor (Not Important) */
 /* This rule sets the default cursor for elements without specific cursor styling. */
 /* It maintains consistent cursor behavior across elements that don't have other cursor rules. */
 .desc-content,
 label {
-  cursor: url(""https://drive.google.com/uc?export=view&id=1xdk4kiVMgjflKjlTi8YBu10u0-vUF9DT"), auto; }
+  cursor: url("Assets/cursor/normal.png"), auto; }
 
 /* Pointer / Hand Cursor (Important) */
 /* This rule applies a custom cursor class when explicitly requested. */
 /* It ensures the use of a hand cursor to signify clickable elements as intended. */
 .desc-cursor-point,
 .desc-cursor-point * {
-  cursor: url("https://drive.google.com/uc?export=view&id=1pJ7ry2hkK7lTP7nHa-DtAPiqH03LqnsP") 10 0, auto !important; }
+  cursor: url("Assets/cursor/select.png") 10 0, auto !important; }
 
 /* Pointer / Hand Cursor (Not Important) */
 /* This rule targets elements that have the default pointer cursor, applying the hand cursor appearance. */
@@ -344,14 +301,14 @@ label {
 .desc-list-imp,
 .desc-dropdown-imp,
 .desc-content input[type=checkbox].desc-checkbox + label {
-  cursor: url("https://drive.google.com/uc?export=view&id=1pJ7ry2hkK7lTP7nHa-DtAPiqH03LqnsP") 10 0, auto; }
+  cursor: url("Assets/cursor/select.png") 10 0, auto; }
 
 /* Cursor Style for Input / Text Selection (Important) */
 /* This rule applies a custom cursor class when explicitly requested. */
 /* It is specifically designed for controlling the cursor appearance during input and text selection. */
 .desc-cursor-select,
 .desc-cursor-select * {
-  cursor: url("https://drive.google.com/uc?export=view&id=1pJ7ry2hkK7lTP7nHa-DtAPiqH03LqnsP") 10 0, auto !important; }
+  cursor: url("Assets/cursor/ibeam.png") 10 0, auto !important; }
 
 /* Styling for Input and Text Selection */
 /* This rule targets elements with the default pointer cursor, ensuring consistent styling */
@@ -359,14 +316,14 @@ label {
 .desc-cursor-select,
 .desc-content input,
 .desc-content textarea {
-  cursor: url("https://drive.google.com/uc?export=view&id=1pJ7ry2hkK7lTP7nHa-DtAPiqH03LqnsP") 10 0, auto; }
+  cursor: url("Assets/cursor/ibeam.png") 10 0, auto; }
 
 /* Cursor style for grabbing */
 /* This rule applies the custom cursor when the cursor class is explicitly requested. */
 /* It ensures that the custom cursor is applied to all elements within the grabbing context. */
 .desc-cursor-grab,
 .desc-cursor-grab * {
-  cursor: url("https://drive.google.com/uc?export=view&id=1UkadfuunWZCnODcIRoLuGuzoEQS8DWzc") 10 0, auto !important; }
+  cursor: url("Assets/cursor/move_drag.png") 10 0, auto !important; }
 
 /**
  * Customized Dropdown Styling
@@ -384,12 +341,12 @@ label {
   /* border */
   border-style: solid;
   border-width: 7px 7px 7px 7px;
-  -moz-border-image: url("https://drive.google.com/uc?export=view&id=10k-_65aNDeZrc8kR9vUkCZjYGj1ZlLG3") 10% repeat repeat;
-  -webkit-border-image: url("https://drive.google.com/uc?export=view&id=10k-_65aNDeZrc8kR9vUkCZjYGj1ZlLG3") 10% repeat repeat;
-  -o-border-image: url("https://drive.google.com/uc?export=view&id=10k-_65aNDeZrc8kR9vUkCZjYGj1ZlLG3") 10% repeat repeat;
-  border-image: url("https://drive.google.com/uc?export=view&id=10k-_65aNDeZrc8kR9vUkCZjYGj1ZlLG3") 10% repeat repeat;
+  -moz-border-image: url("Assets/selection2-.png") 10% repeat repeat;
+  -webkit-border-image: url("Assets/selection2-.png") 10% repeat repeat;
+  -o-border-image: url("Assets/selection2-.png") 10% repeat repeat;
+  border-image: url("Assets/selection2-.png") 10% repeat repeat;
   /* background */
-  background: url("https://drive.google.com/uc?export=view&id=1peaGHvBlAI748RYQJo6ieOQrb9ZqszLu") repeat repeat;
+  background: url("Assets/selection2-background.png") repeat repeat;
   background-clip: padding-box;
   background-origin: padding-box;
   background-position: center; }
@@ -423,7 +380,7 @@ ul.desc-dropdown-imp {
   padding-bottom: 6px;
   padding-left: 6px;
   /* background */
-  background: url("https://drive.google.com/uc?export=view&id=1peaGHvBlAI748RYQJo6ieOQrb9ZqszLu") repeat repeat;
+  background: url("Assets/selection2-background.png") repeat repeat;
   background-clip: padding-box;
   background-origin: padding-box;
   background-position: center; }
@@ -445,7 +402,7 @@ ul.desc-dropdown-imp {
   display: block;
   border: 0px;
   height: 10px;
-  background: url("https://drive.google.com/uc?export=view&id=var(--hr)") repeat-x top left; }
+  background: url("") repeat-x top left; } /* IMPORTANT! MISSING ASSET */
 
 /* RPGUI Golden Horizontal Rule */
 /* This rule adds a golden variation of the horizontal rule for special sections. */
@@ -453,7 +410,7 @@ ul.desc-dropdown-imp {
   display: block;
   border: 0px;
   height: 10px;
-  background: url("https://drive.google.com/uc?export=view&id=var(--hr-golden)") no-repeat top left;
+  background: url("") no-repeat top left; /* IMPORTANT! MISSING ASSET */
   background-size: 100% 100%; }
 
 
@@ -519,12 +476,12 @@ ul.desc-dropdown-imp {
   /* border */
   border-style: solid;
   border-width: 7px 7px 7px 7px;
-  -moz-border-image: url("https://drive.google.com/uc?export=view&id=10k-_65aNDeZrc8kR9vUkCZjYGj1ZlLG3") 10% repeat repeat;
-  -webkit-border-image: url("https://drive.google.com/uc?export=view&id=10k-_65aNDeZrc8kR9vUkCZjYGj1ZlLG3") 10% repeat repeat;
-  -o-border-image: url("https://drive.google.com/uc?export=view&id=10k-_65aNDeZrc8kR9vUkCZjYGj1ZlLG3") 10% repeat repeat;
-  border-image: url("https://drive.google.com/uc?export=view&id=10k-_65aNDeZrc8kR9vUkCZjYGj1ZlLG3") 10% repeat repeat;
+  -moz-border-image: url("Assets/selection2-.png") 10% repeat repeat;
+  -webkit-border-image: url("Assets/selection2-.png") 10% repeat repeat;
+  -o-border-image: url("Assets/selection2-.png") 10% repeat repeat;
+  border-image: url("Assets/selection2-.png") 10% repeat repeat;
   /* background */
-  background: url("https://drive.google.com/uc?export=view&id=1peaGHvBlAI748RYQJo6ieOQrb9ZqszLu") repeat repeat;
+  background: url("Assets/selection2-background.png") repeat repeat;
   background-clip: padding-box;
   background-origin: padding-box;
   background-position: center; }
@@ -548,7 +505,7 @@ ul.desc-list-imp {
   padding-bottom: 6px;
   padding-left: 6px;
   /* background */
-  background: url("https://drive.google.com/uc?export=view&id=1peaGHvBlAI748RYQJo6ieOQrb9ZqszLu") repeat repeat;
+  background: url("Assets/selection2-background.png") repeat repeat;
   background-clip: padding-box;
   background-origin: padding-box;
   background-position: center; }
@@ -682,7 +639,7 @@ ul.desc-list-imp {
   display: none; }
 
 .desc-content input[type=radio].desc-radio + label {
-  background: url("https://drive.google.com/uc?export=view&id=var(--radiobox)") no-repeat;
+  background: url("Assets/radiobox.png") no-repeat;
   line-height: 24px;
   display: inline-block;
   background-size: auto 100%;
@@ -692,7 +649,7 @@ ul.desc-list-imp {
   margin-bottom: 8px; }
 
 .desc-content input[type=radio].desc-radio:checked + label {
-  background: url("https://drive.google.com/uc?export=view&id=var(--radiobox-pressed)") no-repeat;
+  background: url("Assets/radiobox-pressed.png") no-repeat;
   line-height: 24px;
   display: inline-block;
   background-size: auto 100%;
@@ -701,11 +658,11 @@ ul.desc-list-imp {
 
 /* Hover styles */
 .desc-content input[type=checkbox].desc-radio + label:hover {
-    background: url("https://drive.google.com/uc?export=view&id=var(--radiobox-active)") no-repeat;
+    background: url("Assets/radiobox-active.png") no-repeat;
 }
 
 .desc-content input[type=checkbox].desc-radiobox:checked + label:hover {
-    background: url("https://drive.google.com/uc?export=view&id=var(--radiobox-active-pressed)") no-repeat;
+    background: url("Assets/radiobox-active-pressed.png") no-repeat;
 }
 
 /**
@@ -723,7 +680,7 @@ ul.desc-list-imp {
 /* Handle */
 .desc-content ::-webkit-scrollbar-thumb,
 .desc-content::-webkit-scrollbar-thumb {
-  background-image: url("https://drive.google.com/uc?export=view&id=var(--scrollhorizontal)");
+  background-image: url("Assets/scrollhorizontal.png");
   background-size: 100% 100%;
   background-repeat: no-repeat; }
 
@@ -747,7 +704,7 @@ ul.desc-list-imp {
 .desc-content :disabled + .desc-dropdown-imp,
 .desc-content :disabled + .desc-dropdown-imp + .desc-dropdown-imp,
 .desc-content :disabled + .desc-list-imp {
-  cursor: url("https://drive.google.com/uc?export=view&id=1xdk4kiVMgjflKjlTi8YBu10u0-vUF9DT"), auto;
+  cursor: url("Assets/cursor/normal.png"), auto;
   -webkit-filter: grayscale(1);
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
@@ -775,7 +732,7 @@ ul.desc-list-imp {
   width: 15px;
   margin-top: -5px;
   left: 40px;
-  background-image: url("img/slider-thumb.png");
+  background-image: url("Assets/slider.png");
   background-size: 100% 100%; }
 
 /* TO BE ADDED: Rules for Slider Track and Slider Edges */
