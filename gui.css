@@ -76,7 +76,7 @@ Import the font stylesheet.
     background-image: url("Assets/button_H22-pressed.png"); }
 
 /* Large button style */
-.desc-button {
+.desc-button2 {
     /* Hide default button styles */
     background-color: Transparent;
     background-repeat: no-repeat;
@@ -101,14 +101,14 @@ Import the font stylesheet.
     padding-right: 35px; }
 
 /* Button hover */
-.desc-button.hover,
-.desc-button:hover {
+.desc-button2.hover,
+.desc-button2:hover {
     background-image: url("Assets/large-button-active.png"); }
 
 /* Button pressed */
-.desc-button.active,
-.desc-button:active {
-    background-image: url("Assets/large-button-pressed"); }
+.desc-button2.active,
+.desc-button2:active {
+    background-image: url("Assets/large-button-pressed.png"); }
 
 
 /**
