@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+
+    <meta charset="utf-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'-->
+	  <link rel="stylesheet" type="text/css" href="https://ronenness.github.io/RPGUI/stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="https://ronenness.github.io/RPGUI/stylesheets/github-dark.css" media="screen">
+	  <link rel="stylesheet" type="text/css" href="https://ronenness.github.io/RPGUI/stylesheets/print.css" media="print">
+
+    <!-- RPGUI -->
+	  <link rel="stylesheet" type="text/css" href="https://angelos-seizas.github.io/Descendants-ASoIaF-RPG/gui.css">
+	  <script src="https://angelos-seizas.github.io/Descendants-ASoIaF-RPG/gui.js"></script>
+  </head>
+
+<style>
+    body, #container
+    {
+      background: #222;
+      padding-top:20px;
+      padding-bottom:20px;
+      font-size: 16px;
+    }
+
+    .inner
+    {
+      padding-left:20px;
+      padding-right:20px;
+      min-width: 740px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Add margin to create vertical spacing in input elements */
+    form input,
+    .desc-center input {
+        margin-bottom: 10px;
+      }
+
+  </style>
+
+  <body>
+  <div class="desc-content" style="overflow-y:scroll;">
+    <div id="container">
+      <div id="main"></div>
+      <div class="inner strong-border" style="position:relative">
+
+        <header>
+          <img src="https://drive.google.com/uc?export=download&id=1jeyto22RLilPoyS9AypepqFi5SSOdfts" style="display: block; width: 20%; height: 20%; margin-left: auto; margin-right: auto;" class="center">
+          <h1 style="font-size:250%">ΚΑΛΩΣΗΡΘΕΣ ΣΤΟ DESCENDANTS!</h1>
+        </header>
+
+    <? var url = getUrl(); ?>
+    <div class="thin-border">
+    <form method="POST" action="<?= url ?>" class="desc-form" style="position:relative;">
+      <h2>Γράψε το όνομα χρήστη και τον κωδικό σου για να συνδεθείς στον λογαριασμό σου</h2>
+      <div class="desc-error" style="text-align:center"><?= message ?></div>
+      <input type="text" placeholder="Όνομα χρήστη" id="loginUsername" name="username" required><br><br>
+      <input type="password" placeholder="Κωδικός" id="loginPassword" name="password" required><br><br>
+      <div class="desc-center">
+        <button class="desc-button" value="login" id="loginButton" name="LoginButton" style="width:32%">Σύνδεση</button>
+      </div>
+    </form>
+    
+    <h2>Δεν έχεις λογαριασμό; Κάνε εγγραφή εδώ:</h2>
+    <div class="desc-center">
+      <button class="desc-button" value="register" name="ReigsterButton" style="width:32%" onclick="openRegistrationForm()">Εγγραφή</button><br>
+    </div>
+    
+    <div id ="modalOverlay" class="desc-modal-overlay"></div>
+    <div id="registrationForm" class="desc-modal">
+      <form class="desc-modal-content strong-border">
+
+        <span class="desc-close" onclick="closeRegistrationForm()">&times;</span>
+
+        <h2>Δημιουργία λογαριασμού</h2>
+        <div class="desc-error" id="templateMessage" style="text-align:center"></div>
+        <input type="text" placeholder="Όνομα χρήστη" id="username" name="username" required>
+
+        <input type="password" placeholder="Κωδικός" id="password" name="password" required>
+
+        <input type="password" placeholder="Επιβεβαίωση κωδικού" id="confirmPassword" name="confirmPassword" required>
+        <div class="desc-center">
+          <br><input type="button" value="Εγγραφή" onclick="submitForm()">
+        </div>
+      </form> 
+    </div>
+  </body>
+  <script>
+      function openRegistrationForm() {
+        var modal = document.getElementById('registrationForm');
+        var overlay = document.getElementById('modalOverlay');
+        overlay.style.display = 'block';
+        modal.style.display = 'block';
+        document.body.classList.add('modal-open');
+        
+      }
+      
+      function submitForm() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        var confirmPassword = document.getElementById("confirmPassword").value;
+        
+        if (password !== confirmPassword) {
+          document.getElementById("templateMessage").textContent = "Οι κωδικοί δεν ταιριάζουν. Προσπάθησε ξανά.";
+        } else {
+          google.script.run.withSuccessHandler(function(response) {
+            if (!response.success) {
+              document.getElementById("templateMessage").textContent = response.templateMessage;
+            } else {
+              document.getElementById("templateMessage").textContent = response.templateMessage;
+
+              // Automatic login after successfull registration
+              var loginUsername = document.getElementById("username").value;
+              var loginPassword = document.getElementById("password").value;
+              document.getElementById("loginUsername").value = loginUsername;
+              document.getElementById("loginPassword").value = loginPassword;
+              document.getElementById("loginButton").click();
+            }
+          }).registerUser(username, password);
+        }
+      }
+
+      function closeRegistrationForm() {
+        var modal = document.getElementById('registrationForm');
+        var overlay = document.getElementById('modalOverlay');
+        overlay.style.display = 'none';        
+        modal.style.display = 'none';
+        document.body.classList.remove('modal-open');
+      }
+      
+    </script>
+</html>
+

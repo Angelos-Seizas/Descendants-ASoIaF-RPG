@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+
+    <meta charset="utf-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://ronenness.github.io/RPGUI/stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="https://ronenness.github.io/RPGUI/stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="https://ronenness.github.io/RPGUI/stylesheets/print.css" media="print">
+
+    <!-- RPGUI -->
+    <link rel="stylesheet" type="text/css" href="https://angelos-seizas.github.io/Descendants-ASoIaF-RPG/gui.css">
+    <script src="https://angelos-seizas.github.io/Descendants-ASoIaF-RPG/gui.js"></script>
+  </head>
+
+  <style>
+    body, #container
+    {
+      background: #222;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-size: 16px;
+    }
+
+    .inner
+    {
+      padding-left: 20px;
+      padding-right: 20px;
+      min-width: 740px;
+      max-width: 900px;
+      margin: 0 auto;
+
+  </style>
+
+  <body>
+    <div class="desc-content" style="overflow-y:scroll;">
+      <div id="container">
+        <div id="main"></div>
+        <div class="inner strong-border" style="position:relative">
+
+          <? var url = getUrl(); ?>
+          <h2>Καλωσόρισες, <?= username ?>!</h2>
+          <h3>Η σελίδα είναι ακόμη υπό κατασκευή.</h3>
+          <div class="desc-center">
+            <p>Σύντομα θα προστεθούν εδώ τα character sheets των χαρακτήρων σου, τα κάστρα σου και οτιδήποτε άλλο υπήρχε προηγουμένως στο Google Sheets.</p>
+          </div>
+
+          <form method="POST" action="<?= url ?>" class="desc-form" style="position:relative">
+            <div class="desc-center">
+              <button class="desc-button2" name="LogoutButton" value="Logout" style="width: 32%; color: gold; font-size: 26px;">ΕΞΟΔΟΣ</button>
+            </div>
+          </form>
+  </body>
+</html>
+
