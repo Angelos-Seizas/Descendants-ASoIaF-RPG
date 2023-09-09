@@ -8,6 +8,7 @@ Import the font stylesheet.
   image-rendering: auto; /* Default rendering mode */
 }
 
+
 /* Unselectable text */
 .desc-noselect {
   -webkit-touch-callout: none;
@@ -77,7 +78,7 @@ Import the font stylesheet.
     overflow: hidden;
     outline: none;
     /* Background */
-    background: url("Assets/button_H22.png") no-repeat no-repeat;
+    background: url("Assets/button.png") no-repeat no-repeat;
     background-clip: padding-box;
     background-origin: padding-box;
     background-position: center;
@@ -98,12 +99,12 @@ Import the font stylesheet.
 /* Button hover */
 .desc-button.hover,
 .desc-button:hover {
-    background-image: url("Assets/button_H22-active.png"); }
+    background-image: url("Assets/button-active.png"); }
 
 /* Button pressed */
 .desc-button.active,
 .desc-button:active {
-    background-image: url("Assets/button_H22-pressed.png"); }
+    background-image: url("Assets/button-pressed.png"); }
 
 /* Large button style */
 .desc-button2 {
@@ -114,7 +115,7 @@ Import the font stylesheet.
     overflow: hidden;
     outline: none;
     /* Background */
-    background: url("Assets/large-button.png") no-repeat no-repeat;
+    background: url("Assets/button2.png") no-repeat no-repeat;
     background-clip: padding-box;
     background-origin: padding-box;
     background-position: center;
@@ -135,12 +136,12 @@ Import the font stylesheet.
 /* Button hover */
 .desc-button2.hover,
 .desc-button2:hover {
-    background-image: url("Assets/large-button-active.png"); }
+    background-image: url("Assets/button2-active.png"); }
 
 /* Button pressed */
 .desc-button2.active,
 .desc-button2:active {
-    background-image: url("Assets/large-button-pressed.png"); }
+    background-image: url("Assets/button2-pressed.png"); }
 
 /**
 * CHECKBOX STYLING
@@ -221,27 +222,7 @@ Import the font stylesheet.
 .thin-border {
   /* border */
   border-style: solid;
-  border-image-source: url("Assets/thin_opaque-border.png");
-  border-image-repeat: repeat;
-  border-image-slice: 10;
-  border-image-width: 10px;
-  border-width: 10px;
-  padding: 12px;
-  /* internal border */
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  /* background */
-  background: url("Assets/thin_opaque-background.png") repeat repeat;
-  background-clip: padding-box;
-  background-origin: padding-box;
-  background-position: center; }
-
-/* game div with background image and strong border */
-.strong-border {
-    /* border */
-  border-style: solid;
-  border-image-source: url("Assets/strong_opaque-border.png");
+  border-image-source: url("Assets/thin-border.png");
   border-image-repeat: repeat;
   border-image-slice: 30;
   border-image-width: 30px;
@@ -252,7 +233,27 @@ Import the font stylesheet.
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   /* background */
-  background: url("Assets/strong_opaque-background.png") repeat repeat;
+  background: url("Assets/thin-background.png") repeat repeat;
+  background-clip: padding-box;
+  background-origin: padding-box;
+  background-position: center; }
+
+/* game div with background image and strong border */
+.strong-border {
+    /* border */
+  border-style: solid;
+  border-image-source: url("Assets/strong-border.png");
+  border-image-repeat: repeat;
+  border-image-slice: 30;
+  border-image-width: 30px;
+  border-width: 20px;
+  padding: 12px;
+  /* internal border */
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  /* background  */
+  background: url("Assets/strong-background.png") repeat repeat;
   background-clip: padding-box;
   background-origin: padding-box;
   background-position: center; }
@@ -261,18 +262,18 @@ Import the font stylesheet.
 .lite-border {
     /* border */
   border-style: solid;
-  border-image-source: url("Assets/lite_opaque-border.png");
+  border-image-source: url("Assets/lite-border.png");
   border-image-repeat: repeat;
-  border-image-slice: 8 8 8 8;
-  border-image-width: 18px;
-  border-width: 15px;
+  border-image-slice: 30;
+  border-image-width: 30px;
+  border-width: 20px;
   padding: 12px;
   /* internal border */
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   /* background */
-  background: url("Assets/lite_opaque-background.png") repeat repeat;
+  background: url("Assets/lite-background.png") repeat repeat;
   background-clip: padding-box;
   background-origin: padding-box;
   background-position: center; }
@@ -282,25 +283,25 @@ Import the font stylesheet.
   position: relative;
   /* border */
   border-style: solid;
-  border-image-source: url("thick_opaque-border.png");
+  border-image-source: url("thick-border.png");
   border-image-repeat: repeat;
-  border-image-slice: 3 3 3 3;
-  border-image-width: 7px;
-  border-width: 7px;
+  border-image-slice: 30;
+  border-image-width: 30px;
+  border-width: 20px;
   padding: 12px;
   /* internal border */
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   /* background */
-  background: url("thick_opaque-background.png") repeat repeat;
+  background: url("thick-background.png") repeat repeat;
   background-clip: padding-box;
   background-origin: padding-box;
   background-position: center; }
 
 /* Styling for <form> elements */
 .desc-form {
-    background: url("Assets/strong_opaque-background.png"); }
+    background: url("Assets/strong-background.png"); }
 
 
 /**
@@ -381,12 +382,12 @@ label {
   /* border */
   border-style: solid;
   border-width: 7px 7px 7px 7px;
-  -moz-border-image: url("Assets/selection2-.png") 10% repeat repeat;
-  -webkit-border-image: url("Assets/selection2-.png") 10% repeat repeat;
-  -o-border-image: url("Assets/selection2-.png") 10% repeat repeat;
-  border-image: url("Assets/selection2-.png") 10% repeat repeat;
+  -moz-border-image: url("Assets/selection.png") 10% repeat repeat;
+  -webkit-border-image: url("Assets/selection.png") 10% repeat repeat;
+  -o-border-image: url("Assets/selection.png") 10% repeat repeat;
+  border-image: url("Assets/selection.png") 10% repeat repeat;
   /* background */
-  background: url("Assets/selection2-background.png") repeat repeat;
+  background: url("Assets/selection-background.png") repeat repeat;
   background-clip: padding-box;
   background-origin: padding-box;
   background-position: center; }
@@ -420,7 +421,7 @@ ul.desc-dropdown-imp {
   padding-bottom: 6px;
   padding-left: 6px;
   /* background */
-  background: url("Assets/selection2-background.png") repeat repeat;
+  background: url("Assets/selection-background.png") repeat repeat;
   background-clip: padding-box;
   background-origin: padding-box;
   background-position: center; }
@@ -442,15 +443,15 @@ ul.desc-dropdown-imp {
   display: block;
   border: 0px;
   height: 10px;
-  background: url("") repeat-x top left; } /* IMPORTANT! MISSING ASSET */
+  background: url("Assets/hr.png") repeat-x top left; }
 
 /* RPGUI Golden Horizontal Rule */
 /* This rule adds a golden variation of the horizontal rule for special sections. */
-.desc-content hr.golden {
+.desc-content hr.bold {
   display: block;
   border: 0px;
   height: 10px;
-  background: url("") no-repeat top left; /* IMPORTANT! MISSING ASSET */
+  background: url("Assets/hr-bold.png") no-repeat top left;
   background-size: 100% 100%; }
 
 
@@ -502,17 +503,17 @@ ul.desc-dropdown-imp {
 
 /* Input button style */
 input[type="button"] {
-    background-color: #008080; /* Teal background */
+    background-color: #ff5733; /* Vivid orange-red background */
     color: #fff; /* White text */
     border: none; /* No border */
     padding: 10px 20px; /* Padding for better visual appearance */
-    border: 2px solid #FFD700; /* Golden */
+    /* border: 2px solid #FFD700; Golden */
     border-radius: 5px; /* Rounded corners */
     font-size: 16px; /* Font size */ }
 
 /* On hover, make the button slightly darker */
 input[type="button"]:hover {
-    background-color: #00a0a0; /* Slightly lighter teal background on hover */ }
+    background-color: #e6472f; /* Darker shade of orange-red on hover */ }
 
 /* Custom Dropdown Styling Implemented with List */
 /* This rule applies styling to a dropdown box implemented using a list structure, as detailed in gui.js. */
@@ -530,12 +531,12 @@ input[type="button"]:hover {
   /* border */
   border-style: solid;
   border-width: 7px 7px 7px 7px;
-  -moz-border-image: url("Assets/selection2-.png") 10% repeat repeat;
-  -webkit-border-image: url("Assets/selection2-.png") 10% repeat repeat;
-  -o-border-image: url("Assets/selection2-.png") 10% repeat repeat;
-  border-image: url("Assets/selection2-.png") 10% repeat repeat;
+  -moz-border-image: url("Assets/selection.png") 10% repeat repeat;
+  -webkit-border-image: url("Assets/selection.png") 10% repeat repeat;
+  -o-border-image: url("Assets/selection.png") 10% repeat repeat;
+  border-image: url("Assets/selection.png") 10% repeat repeat;
   /* background */
-  background: url("Assets/selection2-background.png") repeat repeat;
+  background: url("Assets/selection-background.png") repeat repeat;
   background-clip: padding-box;
   background-origin: padding-box;
   background-position: center; }
@@ -559,7 +560,7 @@ ul.desc-list-imp {
   padding-bottom: 6px;
   padding-left: 6px;
   /* background */
-  background: url("Assets/selection2-background.png") repeat repeat;
+  background: url("Assets/selection-background.png") repeat repeat;
   background-clip: padding-box;
   background-origin: padding-box;
   background-position: center; }
@@ -789,6 +790,9 @@ ul.desc-list-imp {
   background-image: url("Assets/slider.png");
   background-size: 100% 100%; }
 
+.desc-slider-thumb:hover {
+  background-image: url("Assets/slider-active.png") }
+
 /**
  * Modal dialog styling
  */
@@ -825,3 +829,177 @@ body.modal-open {
 
 /* TO BE ADDED: Rules for Slider Track and Slider Edges */
 /* This section will contain rules that address the styling of the slider background track and the edges of the slider, as well as hover styling for the thumb element. */
+
+/* TEMPORARY ADDITIONS FROM THE ORIGINAL RPGUI.CSS THAT WERE REMOVED FROM THIS FILE /*
+/**
+
+/**
+* Rules for the slider.
+*/
+/* regular slider stuff */
+/* slider container */
+.desc-slider-container {
+  height: 20px;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  position: relative; }
+
+/* slider left edge */
+.desc-slider-left-edge {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 0px;
+  background-image: url("Assets/slider-left.png");
+  background-size: 100% 100%; }
+
+/* slider right edge */
+.desc-slider-right-edge {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  right: 0px;
+  background-image: url("Assets/slider-right.png");
+  background-size: 100% 100%; }
+
+/* slider background track */
+.desc-slider-track {
+  position: absolute;
+  height: 20px;
+  left: 0;
+  right: 0;
+  background-image: url("Assets/slider-track.png");
+  background-repeat: repeat-x;
+  background-size: 24px 100%; }
+
+/* the part of the slider that moves and indicates the value */
+.desc-slider-thumb {
+  position: absolute;
+  height: 30px;
+  width: 15px;
+  margin-top: -5px;
+  left: 40px;
+  background-image: url("Assets/slider.png");
+  background-size: 100% 100%; }
+
+.desc-slider-thumb:hover {
+  background-image: url("Assets/slider-active.png");}
+
+/* golden slider stuff */
+/* golden slider container */
+.desc-slider-container.arrow {
+  height: 30px;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  position: relative; }
+
+/* golden slider left edge */
+.desc-slider-left-edge.arrow {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  left: 0px;
+  background-image: url("Assets/slider_arrow-left.png");
+  background-size: 100% 100%; }
+
+/* golden slider right edge */
+.desc-slider-right-edge.arrow {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  right: 0px;
+  background-image: url("Assets/slider_arrow-right.png");
+  background-size: 100% 100%; }
+
+/* golden slider background track */
+.desc-slider-track.arrow {
+  position: absolute;
+  height: 30px;
+  left: 0;
+  right: 0;
+  background-image: url("Assets/slider-track.png");
+  background-repeat: repeat-x;
+  background-size: 40px 100%; }
+
+/* golden the part of the slider that moves and indicates the value */
+.desc-slider-thumb.arrow {
+  position: absolute;
+  height: 36px;
+  width: 18px;
+  margin-top: -4px;
+  left: 40px;
+  background-image: url("Assets/slider_arrow.png");
+  background-size: 100% 100%; }
+
+.desc-slider-thumb.arrow:hover {
+  background-image: url("Assets/slider_arrow_gold-active.png");}
+
+
+/*
+* progress bar styling
+*/
+/* progress bar container */
+.desc-progress {
+  height: 42px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  position: relative; }
+
+/* progress bar left edge */
+.desc-progress-left-edge {
+  position: absolute;
+  height: 42px;
+  width: 40px;
+  left: 0px;
+  background-image: url("Assets/progress-bar-left.png");
+  background-size: 100% 100%; }
+
+/* progress bar right edge */
+.desc-progress-right-edge {
+  position: absolute;
+  height: 42px;
+  width: 40px;
+  right: 0px;
+  background-image: url("Assets/progress-bar-right.png");
+  background-size: 100% 100%; }
+
+/* progress bar background track */
+.desc-progress-track {
+  position: absolute;
+  height: 42px;
+  left: 40px;
+  right: 40px;
+  background-image: url("Assets/progress-bar-track.png");
+  background-repeat: repeat-x;
+  background-size: 36px 100%; }
+
+/* progress bar - the fill itself */
+.desc-progress-fill {
+  position: absolute;
+  top: 9px;
+  bottom: 8px;
+  left: 0;
+  width: 100%;
+  background-image: url("Assets/progress.png");
+  background-repeat: repeat-x;
+  background-size: 36px 100%; }
+
+/* progress bar - blue color */
+.desc-progress-fill.blue {
+  background-image: url("Assets/progress-blue.png"); }
+
+/* progress bar - green color */
+.desc-progress-fill.green {
+  background-image: url("Assets/progress-green.png"); }
+
+/* progress bar - red color */
+.desc-progress-fill.red {
+  background-image: url("Assets/progress-red.png"); }
+
+
+/* END OF TEMPORARY ADDITIONS */
+
+

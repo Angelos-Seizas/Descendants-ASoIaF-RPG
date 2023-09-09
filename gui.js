@@ -312,7 +312,7 @@ function divMove(e){
 
 
 // class name we will convert to special progress
-var _progress_class = "rpgui-progress";
+var _progress_class = "desc-progress";
 
 // create a rpgui-progress from a given element.
 // note: element must be <input> of type "range" for this to work properly.
@@ -327,12 +327,12 @@ RPGUI.__create_funcs["progress"] = function(element)
 RPGUI.__set_funcs["progress"] = function(elem, value)
 {
 	// get trackbar and progress bar elements
-	var track = RPGUI.get_child_with_class(elem, "rpgui-progress-track");
-	var progress = RPGUI.get_child_with_class(track, "rpgui-progress-fill");
+	var track = RPGUI.get_child_with_class(elem, "desc-progress-track");
+	var progress = RPGUI.get_child_with_class(track, "desc-progress-fill");
 
 	// get the two edges
-	var edge_left = RPGUI.get_child_with_class(elem, "rpgui-progress-left-edge");
-	var edge_right = RPGUI.get_child_with_class(elem, "rpgui-progress-right-edge");
+	var edge_left = RPGUI.get_child_with_class(elem, "desc-progress-left-edge");
+	var edge_right = RPGUI.get_child_with_class(elem, "desc-progress-right-edge");
 
 	// set progress width
 	progress.style.left = "0px";
@@ -365,22 +365,22 @@ function create_progress(elem)
 
 	// track
 	var track = RPGUI.create_element("div");
-	RPGUI.add_class(track, "rpgui-progress-track");
+	RPGUI.add_class(track, "desc-progress-track");
 	progress_container.appendChild(track);
 
 	// left edge
 	var left_edge = RPGUI.create_element("div");
-	RPGUI.add_class(left_edge, "rpgui-progress-left-edge");
+	RPGUI.add_class(left_edge, "desc-progress-left-edge");
 	progress_container.appendChild(left_edge);
 
 	// right edge
 	var right_edge = RPGUI.create_element("div");
-	RPGUI.add_class(right_edge, "rpgui-progress-right-edge");
+	RPGUI.add_class(right_edge, "desc-progress-right-edge");
 	progress_container.appendChild(right_edge);
 
 	// the progress itself
 	var progress = RPGUI.create_element("div");
-	RPGUI.add_class(progress, "rpgui-progress-fill");
+	RPGUI.add_class(progress, "desc-progress-fill");
 	track.appendChild(progress);
 
 	// set color
@@ -763,13 +763,13 @@ RPGUI.on_load(function()
 function create_slider(elem)
 {
 	// check if should do it golden slider
-	var golden = RPGUI.has_class(elem, "golden") ? " golden" : "";
+	var arrow = RPGUI.has_class(elem, "arrow") ? " arrow" : "";
 
 	// create the containing div for the new slider
 	var slider_container = RPGUI.create_element("div");
-	if (elem.id) {slider_container.id = elem.id + "-rpgui-slider"};
+	if (elem.id) {slider_container.id = elem.id + "-desc-slider"};
 	RPGUI.copy_css(elem, slider_container);
-	RPGUI.add_class(slider_container, "rpgui-slider-container" + golden);
+	RPGUI.add_class(slider_container, "desc-slider-container" + arrow);
 
 	// insert the slider container
 	RPGUI.insert_after(slider_container, elem);
@@ -781,22 +781,22 @@ function create_slider(elem)
 
 	// track
 	var track = RPGUI.create_element("div");
-	RPGUI.add_class(track, "rpgui-slider-track" + golden);
+	RPGUI.add_class(track, "desc-slider-track" + arrow);
 	slider_container.appendChild(track);
 
 	// left edge
 	var left_edge = RPGUI.create_element("div");
-	RPGUI.add_class(left_edge, "rpgui-slider-left-edge" + golden);
+	RPGUI.add_class(left_edge, "desc-slider-left-edge" + arrow);
 	slider_container.appendChild(left_edge);
 
 	// right edge
 	var right_edge = RPGUI.create_element("div");
-	RPGUI.add_class(right_edge, "rpgui-slider-right-edge" + golden);
+	RPGUI.add_class(right_edge, "desc-slider-right-edge" + arrow);
 	slider_container.appendChild(right_edge);
 
 	// thumb (slider value show)
 	var thumb = RPGUI.create_element("div");
-	RPGUI.add_class(thumb, "rpgui-slider-thumb" + golden);
+	RPGUI.add_class(thumb, "desc-slider-thumb" + arrow);
 	slider_container.appendChild(thumb);
 
 	// hide original slider
