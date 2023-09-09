@@ -4,7 +4,10 @@
 
 [EN]: Descendants III (pre-alpha version) - Roleplaying game inspired by the epic fantasy book series *A Song of Ice and Fire*
 
-![Descendants Logo](logo.jpg)
+<p align="center">
+  <img src="Logo.png" alt="Descendants Logo" width="50%">
+</p>
+
 
 **English version below**
 
@@ -25,8 +28,7 @@
 Εάν είσαι εξοικειωμένος με JavaScript, HTML, ή/και CSS και θέλεις να συνεισφέρεις στην ανάπτυξη του παιχνιδιού, είσαι ευπρόσδεκτος να προτείνεις βελτιώσεις στο codebase, να προτείνεις νέα χαρακτηριστικά, ή να διορθώσεις bug που έχεις εντοπίσει.
 
 ## Άδειες
-Το πλαίσιο CSS που χρησιμοποιείται σε αυτό το πρότζεκτ είναι μια τροποποιημένη έκδοση του [RPGUI (RPG gui για παιχνίδια Ιστού)](https://ronenness.github.io/RPGUI/), που διανέμεται με την άδεια zlib. Οι κύριες τροποποιήσεις που έγιναν ήταν η αφαίρεση του εφέ πιξελοποίησης από τα στοιχεία CSS, η αλλαγή γραμματοσειράς, και η αντικατάσταση των αρχικών εικόνων με εικόνες που προέρχονται από το [Battle of Wesnorth](https://github.com/wesnoth/wesnoth). Οι πρωτότυπες εικόνες του Battle of Wesnorth διανέμονται με την άδεια GNU GPL v2+, ενώ οι εικόνες εκίνες που αποτελούν μεταγενέστερες προσθήκες φέρουν την άδεια χρήσης  [Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/ ). Για λεπτομερείς πληροφορίες σχετικά με την αδειοδότηση των οπτικών στοιχείων του Battle of Wesnorth, ανέτρεξε στο wiki του εν λόγω παιχνιδιού:\
-[https://wiki.wesnoth.org/Wesnoth:Copyrights#The_Battle_for_Wesnoth_-_Visual_and_Audio_Contributions](https://wiki.wesnoth.org/Wesnoth:Copyrights#The_Battle_for_Wesnoth_-_Visual_and_Audio_Contributions)
+Το πλαίσιο CSS που χρησιμοποιείται σε αυτό το πρότζεκτ είναι μια τροποποιημένη έκδοση του [RPGUI (RPG gui για παιχνίδια Ιστού)](https://ronenness.github.io/RPGUI/), που διανέμεται με την άδεια zlib. Οι κύριες τροποποιήσεις που έγιναν ήταν η αφαίρεση του εφέ πιξελοποίησης από τα στοιχεία CSS, η αλλαγή γραμματοσειράς, και η αντικατάσταση των αρχικών εικόνων με εικόνες που σχεδιάστηκαν ειδικά για το Descendants 3.
 
 ---
 
@@ -49,5 +51,4 @@ Presently, the game remains inoperative until the alpha testing of the new versi
 If you are familiar with JavaScript, HTML, and/or CSS, and you wish to contribute to the development of the game, you are welcome to improve the codebase, suggest new feautures, or fix any bugs you encounter.
 
 ## Licenses
-The CSS framework used in this project is a modified version of [RPGUI (RPG gui for web games)](https://ronenness.github.io/RPGUI/), distributed under the zlib license. The main modifications are the removal of the pixelation effect from CSS elements, the changing of fonts, and the substitution of the original images with images sourced from [Battle of Wesnorth](https://github.com/wesnoth/wesnoth). The original images from Battle of Wesnorth adhere to the GNU GPL v2+ license, while the images that are later additions are licensed under [Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). For detailed information on Battle of Wesnorth's visual licensing, you are referred to its wiki:
-[https://wiki.wesnoth.org/Wesnoth:Copyrights#The_Battle_for_Wesnoth_-_Visual_and_Audio_Contributions](https://wiki.wesnoth.org/Wesnoth:Copyrights#The_Battle_for_Wesnoth_-_Visual_and_Audio_Contributions)
+The CSS framework used in this project is a modified version of [RPGUI (RPG gui for web games)](https://ronenness.github.io/RPGUI/), distributed under the zlib license. The main modifications are the removal of the pixelation effect from CSS elements, the changing of fonts, and the substitution of the original images with custom images specifically designed for Descendants 3.
